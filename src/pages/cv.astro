@@ -1,0 +1,105 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    As much as I would like to do the typical "I am a robot, and this is my ai generated summary with 3000 action verbs", I'm not going to do that. My name is Link Lee, you can call me Link or Jack, doesn't really matter. I'm a Software Engineer / Front-End Developer with a very... we'll just call it challenging and interesting background. I grew up in Las Vegas where a pretty big chunk of my professional career happened before pursuing my actual dream in Software Development! I even played Video Games professionally for a while, go figure. After a few caffeine and adderall driven years of screaming "**** ***" to a monitor while debugging and coding like a monkey, here we are. I just want to keep learning and growing and I can't wait for the next few decades of it. 🚀
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="College"
+      subtitle="경희대학교 컴퓨터공학부 (Kyung Hee University School of Computing), Seoul, South Korea"
+    />
+    <TimeLineElement
+      title="College, again"
+      subtitle="University of the People (UoPeople), Pasadena, CA"
+    />
+    <TimeLineElement
+      title="College, yet again"
+      subtitle="University of Arizona (UofA), Tucson, AZ"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Software Developer, IT Tech Engineer"
+      subtitle="Easton Nights Inc., New York, NY"
+    >
+    <li>Integrated modern production infrastructure, increasing productivity by 35% through React (MERN stack).</li>
+    <li>Optimized web performance by refactoring code base & splitting JavaScript bundles, cutting LCP time under 2 seconds.</li>
+    <li>Implemented, maintained and researched technology infrastructure while promoting ownership & adoption techniques, decreasing staff hardware downtime by 25%.</li><br/>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Director of Experience"
+      subtitle="Hakkasan Group, Las Vegas, NV"
+    >
+    <li>Directed multiple teams to deliver high-quality customer experiences across all 8 luxury entertainment venues.</li>
+    <li>Developed and executed marketing/promotional campaigns for Omnia, Jewel, and Hakkasan, doubling patron attendance during large format weekends, holidays, and historically low attendance evenings.</li>
+    <li>Orchestrated cross-functional teams to manage event logistics, production, and entertainment resulting in a 98% growth in customer satisfaction ratings during a 5 year time period.</li>
+    <li>Leveraged knowledge in social engineering and customer development to cultivate relationships with key partners, vendors and clients, creating a 40% increase in quarterly revenue.</li>
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      AWS Cloud Associate Certifications (in progress)
+    </li>
+    <li>
+      Python (PCEP, PCAP, PCPP)
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6 mb-10">
+    <li>Javascript</li>
+    <li>React</li>
+    <li>HTML/CSS</li>
+    <li>Astro</li>
+    <li>Tailwind</li>
+    <li>Python</li>
+    <li>Git</li>
+    <li>Cloud Dev.</li>
+    <li>Postman</li>
+    <li>API</li>
+    <li>Front-End Dev.</li>
+    <li>Sec Ops</li>
+    <li>Leadership</li>
+    <li>Creativity</li>
+    <li>Problem-Solving</li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Contact</div>
+  </div>
+
+  <ul class="list-disc mx-6 grid gap-2">
+    <li>
+      📱 (610) 905-1376
+    </li>
+    <li>
+      📧 henlowdev@gmail.com
+    </li>
+  </ul>
+</BaseLayout>

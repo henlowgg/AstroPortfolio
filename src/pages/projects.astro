@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="Projects" sideBarActiveItemID="projects">
+	<div>
+		<div class="text-3xl w-full font-bold mb-5">Current Projects</div>
+	</div>
+
+	<HorizontalCard
+		title="Rescue.io"
+		img="/homescreenRescue.png"
+		desc="Rescue.io, a website built with React, Tailwind, CSS, and a third party API endpoint hosted on Vercel. Rescue.io was made to match you with doggos, and to save them from shelters. Click to go to GitHub for the repo, otherwise click me on the main page for Vercel deployment!"
+		url="https://github.com/henlowgg/fetchseek"
+		badge="NEW"
+	/>
+	<div class="divider my-0"></div>
+	<HorizontalCard
+		title="SOLID Principles, But I'm 5 Years Old"
+		img="/SOLID.png"
+		desc="The SOLID principles of object-oriented programming help make object-oriented designs more understandable, flexible, and maintainable. But I figured, hold up, I want to be able to understand this like a 5 year old. So, that's exactly what I am doing! SOLID principles, but explained as if you were 5 years old."
+		url="#"
+		badge="NEW"
+	/>
+
+	<div>
+		<div class="text-3xl w-full font-bold mb-5 mt-10">Additional Stuff</div>
+	</div>
+  <HorizontalCard
+    title="Portfolio Built With Astro 🚀"
+    img="/portfolio.png"
+    desc="Well, the title speaks for itself, my portfolio built with Astro! Probably the best framework I have ever used, and can't wait to continue building with it."
+    url="#"
+    badge="NEW"
+  />
+  <div class="divider my-0"></div>
+	<HorizontalCard
+		title="P5 & Three Landing Page"
+		img="/oldPortfolio.png"
+		desc="Was inspired by 'Keita Yamada' and figured I would try to make something similar to what he pulled off. Built with Three.js and P5, I was able to render millions of particles in a constantly flowing rotation without blowing up my GPU, pretty awesome to pull it off."
+		url="https://github.com/henlowgg/Portfolio23"
+		badge="OLDIE BUT GOODIE"
+	/>
+	<div class="divider my-0"></div>
+	<HorizontalCard
+		title="Dashboard"
+		img="/doggoDashboard.png"
+		desc="Dashboard built with vanilla JS, HTML, and CSS. Wanted a dashboard/invoice tracker, so I made one for myself, because doggo is very very expensive sometimes. 🐕"
+		url="https://github.com/henlowgg/Dashboard"
+	/>
+</BaseLayout>
